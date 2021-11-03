@@ -42,5 +42,5 @@ def get_stats():
 
 
 def stats_view(request):
-    context = {}
+    context = {'stats': get_stats()}
     return TemplateResponse(request, 'model_stats/stats.html', context)
