@@ -1,4 +1,5 @@
 from django.template.response import TemplateResponse
+from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 
@@ -41,6 +42,7 @@ def get_stats():
         }
 
 
+@staff_member_required
 def stats_view(request):
     context = {'stats': get_stats()}
     return TemplateResponse(request, 'model_stats/stats.html', context)
