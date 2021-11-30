@@ -1,1 +1,1 @@
-recursive-include mfa/templates *.html
+recursive-include model_stats/templates *.html
