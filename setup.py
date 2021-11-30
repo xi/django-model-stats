@@ -9,7 +9,7 @@ setup(
     url='https://github.com/xi/django-model-stats',
     author='Tobias Bengfort',
     author_email='tobias.bengfort@posteo.de',
-    version='0.0.1',
+    version='0.0.2',
     license='MIT',
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
