@@ -1,14 +1,14 @@
-from django.template.response import TemplateResponse
 from django.contrib.admin.views.decorators import staff_member_required
-from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.models import ContentType
+from django.template.response import TemplateResponse
 
 
 def percent(part, total):
     if total == 0:
         return None
     p = part * 100 // total
-    return '{}%'.format(p)
+    return f'{p}%'
 
 
 def get_stats():
