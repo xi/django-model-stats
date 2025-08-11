@@ -7,7 +7,7 @@ name = "django-model-stats"
 version = "0.0.2"
 description = "Display how often models and model fields are used in the database"
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "Tobias Bengfort", email = "tobias.bengfort@posteo.de"},
 ]
